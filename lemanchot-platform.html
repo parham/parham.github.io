@@ -5,21 +5,18 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Parham Nooralishahi's website</title>
-  <meta name="keywords" content="Parham, Nooralishahi, CV, R&D, Resume">
-  <meta name="description"
-    content="This is the personal website of Parham Nooralishahi. You can keep up with my work here! :D">
+  <title>LeManchot-DC platform</title>
+  <meta name="keywords" content="data-acquisition, drones, ndt, multimodal, lemanchot, industrial-inspection">
   <meta name="author" content="Parham Nooralishahi (PHM66)">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://parhamnooralishahi.me/assets/img/favicon.png" rel="icon">
+  <link href="https://parhamnooralishahi.me/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet"
-  >
+    rel="stylesheet">
 
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +47,8 @@
 
       <div class="profile">
         <img src="https://github.com/parham.png" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">PHM66</a></h1>
+        <h1 class="text-light"><a href="https://parhamnooralishahi.me">PHM66</a></h1>
+
         <div class="social-links mt-3 text-center">
           <a href="https://www.linkedin.com/in/parham-nooralishahi/" class="linkedin"><i
               class="bx bxl-linkedin"></i></a>
@@ -61,6 +59,27 @@
         </div>
       </div>
 
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <!-- <li><a href="#hero" class="nav-link"><i class="bx bx-home"></i> <span>Projects</span></a></li> -->
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#strengths" class="nav-link scrollto"><i class="bi bi-diagram-3-fill"></i>
+              <span>Strengths</span></a></li>
+          <li><a href="#proglang" class="nav-link scrollto"><i class="bi bi-translate"></i> <span>Programming</span></a>
+          </li>
+          <li><a href="#education" class="nav-link scrollto"><i class="bi bi-bookmark-fill"></i>
+              <span>Educations</span></a></li>
+          <li><a href="#experience" class="nav-link scrollto"><i class="bi bi-person-workspace"></i>
+              <span>Experiences</span></a></li>
+          <li><a href="#organization" class="nav-link scrollto"><i class="bi bi-building"></i>
+              <span>Organizations</span></a></li>
+          <li><a href="#honors" class="nav-link scrollto"><i class="bi bi-star-fill"></i> <span>Honors</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-list-stars"></i> <span>Skills</span></a></li>
+          <li><a href="#publications" class="nav-link scrollto"><i class="bi bi-newspaper"></i>
+              <span>Publications</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
   </header>
   <!-- End Header -->
@@ -72,20 +91,35 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfoio Details</h2>
+          <h2>LeManchot-DC Platform</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Portfoio Details</li>
+            <li>LeManchot-DC Platform</li>
           </ol>
         </div>
-
+        <p align="justify">
+        In the rise of recent advancements in unmanned aerial vehicles, many studies have focused on using multi-modal platforms 
+        for remote inspection of industrial and construction sites. The acquisition of multiple data modalities assists the inspectors 
+        in acquiring comprehensive information about the targeted components. Despite the benefits of multi-modal platforms, the 
+        calibration and fusion of the obtained data modalities present many challenges that need to be addressed. Using a calibration 
+        board with geometrically known features to estimate intrinsic and extrinsic parameters and accurately align the images in thermal 
+        and visible spectral bands, is one of the main approaches to address the problem of dissimilarity of feature appearances in 
+        different spectrums.This study presents a comprehensive platform for drone-based multi-modal inspection of industrial and construction 
+        components, including three main components: 
+        1) a sensor setup that can be used as a standalone system or a payload for a drone; 
+        2) a multi-modal embedded system; and 
+        3) a novel calibration board for multi-modal data fusion. 
+        The multi-modal embedded system provides the required features to record, transmit, and visualize the thermal, visible, and depth data synchronously. 
+        Additionally, the system presents a multi-modal fusion technique to form RGBD&T data containing thermal and texture information of the obtained 3D view.
+        Moreover, this study introduces a novel self-heating calibration board that uses Thermoelectric Peltier modules to provide an identifiable and sharp 
+        pattern in thermal and visible images. The calibration board is designed with an aim also to be used as Ground Control Point (GCP) in drone surveys.
+        </p>
       </div>
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-
         <div class="row gy-4">
 
           <div class="col-lg-8">
@@ -93,15 +127,17 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                  <img src="https://github.com/parham/lemanchot-dc/raw/main/resources/setup_top.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                  <img src="https://github.com/parham/lemanchot-dc/raw/main/resources/setup_cad_model_top%20(1).png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                  <img src="https://github.com/parham/lemanchot-dc/raw/main/resources/setup_on_drone_2%20(1).jpg" alt="" 
+                    height="600" style="margin-left: 20%; margin-right: 40%"
+                  >
                 </div>
 
               </div>
