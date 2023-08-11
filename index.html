@@ -63,7 +63,7 @@
       ['Machine Learning', 8]
     ]);
   
-    var options = {'legend':'center', 'title':'Bachelor in Engineering', 'legend': {'position': 'none'},
+    var options = {'legend':'center', 'title':'Bachelor in Engineering', 'legend': {'position': 'left'},
       'text-align': 'center',
       'colors': ['#777777', '#666666', '#555555', '#444444', '#333333', '#222222', '#111111']};
     var chart = new google.visualization.PieChart(document.getElementById('bachelor-inv'));
@@ -84,7 +84,7 @@
     ]);
 
     // Optional; add a title and set the width and height of the chart
-    var options = {'legend':'center', 'title':'Master in Engineering', 'legend': {'position': 'none'},
+    var options = {'legend':'center', 'title':'Master in Engineering', 'legend': {'position': 'left'},
       'colors': ['#777777', '#666666', '#555555', '#444444', '#333333', '#222222', '#111111']};
     var chart = new google.visualization.PieChart(document.getElementById('master-inv'));
     chart.draw(data, options);
@@ -95,11 +95,11 @@
     data.addColumn('string', 'Research Area');
     data.addColumn('number', 'Focus Rate');
     data.addRows([
-      ['Software Engineering', 3],
+      ['Software Engineering', 2],
       ['Computer Vision', 5],
-      ['Machine Learning', 8],
+      ['Machine Learning', 7],
       ['Drones', 9],
-      ['Thermography', 9],
+      ['Thermography', 8],
     ]);
 
     // 'colors': ['#777777', '#666666', '#555555', '#444444', '#333333', '#222222', '#111111']};
@@ -211,7 +211,7 @@
             </p> -->
             <div class="row">
               <p>Ph.D. in Electrical Engineering / Senior Technical Lead at TORNGATS / Specialist in Payloads / Expert in Drones & Robotics.</p>
-              <p>info@parhamnooralishahi.me</p>
+              <p>[info]@[my domain]</p>
             </div>
           </div>
         </div>
@@ -400,13 +400,18 @@
         </div>
       </div>
 
-      <div class="container">
-        <br><br>
-        <div class="row">
-          <h4>Involvement in Research Areas</h4>
-          <div class="col-sm" id="doctor-inv"></div>
-          <div class="col-sm" id="master-inv"></div>
-          <div class="col-sm" id="bachelor-inv"></div>
+      <div class="container" >
+        <br>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h6 class="card-title">Involvement in Research Areas</h6>
+            <hr />
+            <div class="row">
+              <div class="col-sm" id="doctor-inv"></div>
+              <div class="col-sm" id="master-inv"></div>
+              <div class="col-sm" id="bachelor-inv"></div>
+            </div>
+          </div>
         </div>
       </div>
 
