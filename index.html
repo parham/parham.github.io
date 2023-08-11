@@ -35,12 +35,80 @@
 </head>
 
 <!-- Google tag (gtag.js) -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-59HL3R4X1Y"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
   gtag('config', 'G-59HL3R4X1Y');
+</script>
+
+<script type="text/javascript">
+  // Load google charts
+  google.charts.load('current', {'packages':['corechart']});
+
+  google.charts.setOnLoadCallback(drawBachelorChart);
+  google.charts.setOnLoadCallback(drawMasterChart);
+  google.charts.setOnLoadCallback(drawDoctorChart);
+  
+  function drawBachelorChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Research Area');
+    data.addColumn('number', 'Focus Rate');
+    data.addRows([
+      ['Software Engineering', 9],
+      ['Computer Vision', 7],
+      ['Machine Learning', 8]
+    ]);
+  
+    var options = {'legend':'center', 'title':'Bachelor in Engineering', 'legend': {'position': 'none'},
+      'text-align': 'center',
+      'colors': ['#777777', '#666666', '#555555', '#444444', '#333333', '#222222', '#111111']};
+    var chart = new google.visualization.PieChart(document.getElementById('bachelor-inv'));
+    chart.draw(data, options);
+  }
+
+  function drawMasterChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Research Area');
+    data.addColumn('number', 'Focus Rate');
+    data.addRows([
+      ['Software Engineering', 4],
+      ['Computer Vision', 8],
+      ['Machine Learning', 8],
+      ['Drones', 6],
+      ['Robotics', 7],
+      ['Soft Computing', 9],
+    ]);
+
+    // Optional; add a title and set the width and height of the chart
+    var options = {'legend':'center', 'title':'Master in Engineering', 'legend': {'position': 'none'},
+      'colors': ['#777777', '#666666', '#555555', '#444444', '#333333', '#222222', '#111111']};
+    var chart = new google.visualization.PieChart(document.getElementById('master-inv'));
+    chart.draw(data, options);
+  }
+
+  function drawDoctorChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Research Area');
+    data.addColumn('number', 'Focus Rate');
+    data.addRows([
+      ['Software Engineering', 3],
+      ['Computer Vision', 5],
+      ['Machine Learning', 8],
+      ['Drones', 9],
+      ['Thermography', 9],
+    ]);
+
+    // 'colors': ['#777777', '#666666', '#555555', '#444444', '#333333', '#222222', '#111111']};
+    var options = {'legend':'center', 'title':'Doctorate in Engineering', 'legend': {'position': 'left'}, 
+      'colors': ['#777777', '#666666', '#555555', '#444444', '#333333', '#222222', '#111111']};
+    var chart = new google.visualization.PieChart(document.getElementById('doctor-inv'));
+    chart.draw(data, options);
+  }
+
 </script>
 
 <body>
@@ -330,8 +398,18 @@
             </div>
           </div>
         </div>
-
       </div>
+
+      <div class="container">
+        <br><br>
+        <div class="row">
+          <h4>Involvement in Research Areas</h4>
+          <div class="col-sm" id="doctor-inv"></div>
+          <div class="col-sm" id="master-inv"></div>
+          <div class="col-sm" id="bachelor-inv"></div>
+        </div>
+      </div>
+
     </section><!-- End Education Section -->
 
     <!-- ======= Experience Section ======= -->
